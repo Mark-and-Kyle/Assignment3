@@ -43,7 +43,7 @@ var updatePhelpsMemorial = function() {
    */
 	Listing.findOne({'code': 'PHL'}, function(err,list){
 		if(err) return handleError(err);
-		list.address = '701 North Broadway Sleepy Hollow, NY 10591-1020';
+		list.address = '701 North Broadway Sleepy Hollow, NY 10591-1020'; //This was a confusing one, this is the already correct address
 		list.save(function(err){
 			if(err) return handleError(err);
 			
