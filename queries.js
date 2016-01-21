@@ -43,7 +43,9 @@ var updatePhelpsMemorial = function() {
    */
 	Listing.findOne({'code': 'PHL'}, function(err,list){
 		if(err) return handleError(err);
-		list.address = '701 North Broadway Sleepy Hollow, NY 10591-1020';
+		list.address = '100 Phelps Lab P.O. Box 116350 Gainesville, FL  32611';
+		list.coordinates.latitude = '29.6447855';
+		list.coordinates.longitude = '-82.3491879';
 		list.save(function(err){
 			if(err) return handleError(err);
 			
